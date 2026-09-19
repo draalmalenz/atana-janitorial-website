@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-brand-ink antialiased;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-in,
+  .animate-ken-burns,
+  .animate-fade-up,
+  .animate-pop-in,
+  .animate-float,
+  .animate-blob,
+  .animate-glow-pulse {
+    animation: none !important;
+  }
+}
